@@ -30,3 +30,17 @@ public with sharing class ARVaultCompareController {
         return ARVaultService.getCompareMembers(idUser, txARVault, fbackupID, sbackupID, memType, memName);
     } 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
