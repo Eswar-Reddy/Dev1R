@@ -17,7 +17,9 @@ public class ARVaultSetupControllerTest {
         System.assertNotEquals(0, orgConfig.size());
     }
     static testMethod void test_basicAuthCallout_UseCase1(){
-        Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
+        Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());  
+        
+        
         String addSfOrgEnv = ARVaultSetupController.basicAuthCallout('0f913a9c-a99e-45fb-adc2-d7c4a9713dce', 'MTIzNDU2', 'Naresh Test Dev', 
                                                                      'nareshtestdev143@autorabit.com',
                                                                      'Naresh@7','NukwuYRFng5fuAMV9MPW5FKaW',
@@ -41,6 +43,8 @@ public class ARVaultSetupControllerTest {
         Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
         String testSfOrgEnv = ARVaultSetupController.testSfConnection('0f913a9c-a99e-45fb-adc2-d7c4a9713dce', 'MTIzNDU2','00D1I000000kyuFUAQ');
         System.assertEquals('Success', testSfOrgEnv);
+        
+        
     }
     static testMethod void test_updateSfOrg_UseCase1(){
         Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
