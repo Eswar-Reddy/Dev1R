@@ -7,7 +7,11 @@ public with sharing class ARVaultBackupController {
     
     @AuraEnabled
     public static List<Object> getListOfBackups (String idUser, String txARVault, String sfOrgID) {
-    	return ARVaultService.getListOfBackups(idUser, txARVault, sfOrgID);
+    	return ARVaultService.getListOfBackups(idUser, txARVault, sfOrgID);   
+	    
+	    
+	    
+	    
     }
 	
     @AuraEnabled
