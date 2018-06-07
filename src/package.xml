@@ -2,6 +2,10 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>39.0</version>
     <types>
+        <members>Account.test_fieldjune07__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
         <members>TerritoryModel1</members>
         <name>Territory2Model</name>
     </types>
